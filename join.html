@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/84e75a1ab5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav style="background: grey;">
+            <div class="navbar container flex">
+                <div class="navbar-brand">
+                    <a href="index.html"><img src="https://wango.org/2016/img/logo.png" alt="logo" srcset=""></a>
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+                <div class="nav-list">
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="work.html">Our Work</a></li>
+                        <li><a href="join.html">Join WANGO</a></li>
+                        <button class="nav-btn" style="margin-left: 10px;"><a href="">Member Login</a></button>
+                        <button class="nav-btn" style="margin-left: 10px;"><a href="">Donate</a></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="join">
+            <h1>Join Us</h1>
+            <div class="join-us container flex" style="text-align: center;justify-content: space-between;">
+                <div class="join-card">
+                    <img src="https://www.wango.org/2016/img/join_as_ngo.png" alt="" srcset="">
+                    <h3>NGO, Nonprofit Membership</h3>
+                    <p>Non-governmental organizations, nonprofit organizations, charities, private voluntary organizations. Complete the application in this section.</p>
+                    <a href="">Membership Privileges, Benefits and Services</a><br>
+                    <br>
+                    <a href="">Classes of Membership</a><br>
+                    <br>
+                    <a href="">How to Join WANGO</a><br>
+                    <button class="bg2-btn-blue"><a href="">Join Now</a></button>
+                </div>
+                <div class="join-card">
+                    <img src="https://www.wango.org/2016/img/join_as_affiliate.png" alt="" srcset="">
+                    <h3>Affiliate Membership</h3>
+                    <p>Intergovernmental bodies, government agencies, corporations, and public universities are also invited to join WANGO as Affiliate Members. Complete the application in this section.</p>
+                    <a href="">Membership Privileges, Benefits and Services</a><br>
+                    <br>
+                    <a href="">Classes of Membership</a><br>
+                    <br>
+                    <a href="">How to Join WANGO</a><br>
+                    <button class="bg2-btn-blue"><a href="">Join Now</a></button>
+                </div>
+                <div class="join-card">
+                    <img src="https://www.wango.org/2016/img/join_as_individual.png" alt="" srcset="">
+                    <h3>Individual Membership</h3>
+                    <p>Individuals who support the objectives of the Association are invited to apply for WANGO Individual (Associate) Membership.</p>
+                    <a href="">Membership Privileges, Benefits and Services</a><br>
+                    <br>
+                    <a href="">Classes of Membership</a><br>
+                    <br>
+                    <a href="">How to Join WANGO</a><br>
+                    <button class="bg2-btn-blue"><a href="">Join Now</a></button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container flex">
+                <div class="f-inner">
+                    <h4>ABOUT US</h4>
+                    <a href="">About WANGO</a><br>
+                    <a href="">Mission & Purposes</a><br>
+                    <a href="">Chapters</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>OUR WORK</h4>
+                    <a href="">Activities</a><br>
+                    <a href="">Awards</a><br>
+                    <a href="">Code of Ethics</a><br>
+                    <a href="">NGO Resources</a><br>
+                    <a href="">NGO Handbook</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>JOIN US</h4>
+                    <a href="">Join WANGO</a><br>
+                    <a href="">Work With Us</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>STAY CONNECTED</h4>
+                    <a href="">Contact Us</a>
+                    <img src="https://wango.org/images/linkedin-full.png" alt="" srcset="">
+                </div>
+                <div class="f-inner">
+                    <h4>NEWSLETTER</h4>
+                    <input type="name" value="Name" style="padding: 10px 0;border: 2px solid orange;margin: 20px 0;"><br>
+                    <input type="email" value="Email" style="padding: 10px 0;border: 2px solid orange;margin: 20px 0;"><br>
+                    <button class="bg2-btn-blue"><a href="">Sign Up</a></button>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright" style="text-align: center;background: black;color: grey;">
+            <p>WANGO is a 501(c)(3) public charity<br>
+                © 2021. WANGO - World Association of Non-Governmental Organizations<br>
+                Sitemap</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListner('scroll',function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+            function toggleMenu(){
+                const menuToggle =document.querySelector('.menuToggle');
+                const navigation =document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

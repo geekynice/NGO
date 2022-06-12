@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/84e75a1ab5.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar container flex">
+                <div class="navbar-brand">
+                    <a href="index.html"><img src="https://wango.org/2016/img/logo.png" alt="logo" srcset=""></a>
+                </div>
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+                <div class="nav-list">
+                    <ul class="navigation">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="work.html">Our Work</a></li>
+                        <li><a href="join.html">Join WANGO</a></li>
+                        <button class="nav-btn" style="margin-left: 10px;"><a href="">Member Login</a></button>
+                        <button class="nav-btn" style="margin-left: 10px;"><a href="">Donate</a></button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="about-us">
+            <div class="about container">
+                <h1>About WANGO</h1>
+                <img src="https://www.wango.org/images/about/about2017.jpg " alt="" srcset="">
+                <p>The World Association of Non-Governmental Organizations (WANGO) is an international organization uniting NGOs worldwide in the cause of advancing peace and global well being. WANGO helps to provide the mechanism and support needed for NGOs to connect, partner, share, inspire, and multiply their contributions to solve humanity’s basic problems.<br>
+    
+                    Initiated in 2000 by a handful of international NGOs and prominent visionaries, WANGO has quickly become one of the premier international bodies for non-governmental organizations that are committed to the ideals of universal peace, justice, and well being for all humanity.<br>
+                    
+                    Concerned with universal values shared across the barriers of politics, culture, religion, race and ethnicity, the founding organizations and individuals envisioned an organization that would enable NGOs to work in partnership across those barriers, thereby weaving a selfless social fabric essential<br> to establishing a worldwide culture of peace. By optimizing resources and sharing vital information, WANGO provides a means for NGOs to become more effective in completing their vital tasks.
+                    
+                    With its global network of NGOs, as well as affiliates drawn from the ranks of governmental and intergovernmental bodies, business, and universities, WANGO has become an international leader in tackling issues of serious global concern.</p>
+                    <button class="bg2-btn-blue"><a href="">Join Us</a></button>
+            </div>
+        </section>
+        <footer>
+            <div class="container flex">
+                <div class="f-inner">
+                    <h4>ABOUT US</h4>
+                    <a href="">About WANGO</a><br>
+                    <a href="">Mission & Purposes</a><br>
+                    <a href="">Chapters</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>OUR WORK</h4>
+                    <a href="">Activities</a><br>
+                    <a href="">Awards</a><br>
+                    <a href="">Code of Ethics</a><br>
+                    <a href="">NGO Resources</a><br>
+                    <a href="">NGO Handbook</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>JOIN US</h4>
+                    <a href="">Join WANGO</a><br>
+                    <a href="">Work With Us</a><br>
+                </div>
+                <div class="f-inner">
+                    <h4>STAY CONNECTED</h4>
+                    <a href="">Contact Us</a>
+                    <img src="https://wango.org/images/linkedin-full.png" alt="" srcset="">
+                </div>
+                <div class="f-inner">
+                    <h4>NEWSLETTER</h4>
+                    <input type="name" value="Name" style="padding: 10px 0;border: 2px solid orange;margin: 20px 0;"><br>
+                    <input type="email" value="Email" style="padding: 10px 0;border: 2px solid orange;margin: 20px 0;"><br>
+                    <button class="bg2-btn-blue"><a href="">Sign Up</a></button>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright" style="text-align: center;background: black;color: grey;">
+            <p>WANGO is a 501(c)(3) public charity<br>
+                © 2021. WANGO - World Association of Non-Governmental Organizations<br>
+                Sitemap</p>
+        </div>
+        <script type="text/javascript">
+            window.addEventListner('scroll',function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+            function toggleMenu(){
+                const menuToggle =document.querySelector('.menuToggle');
+                const navigation =document.querySelector('.navigation');
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

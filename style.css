@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+}
+.container
+{
+    max-width: 1235px;
+    margin: auto;
+}
+a
+{
+    text-decoration: none;
+}
+.flex
+{
+    display: flex;
+}
+nav{
+    background: white;
+    position: sticky;
+    top: 0;
+    margin-top: -10px;
+}
+.navbar
+{
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-list{
+    margin-top: 24px;
+}
+.nav-list ul li
+{
+    list-style: none;
+    display: inline;
+    padding: 13px;
+}
+.nav-list ul li a{
+    color: black;
+    align-items: center;
+    font-size: 17px;
+}
+.nav-btn
+{
+    background:  #54B47E;
+    border:2px solid white;
+    padding: 5px;
+}
+.nav-btn a{
+    color: white;
+    padding: 10px;
+}
+.nav-btn:hover{
+    background: white;
+    border: 2px solid #54B47E;
+}
+.nav-btn a:hover{
+    background: #54B47E;
+}
+.bg
+{
+    background-image: url(https://wango.org/2016/img/home_bg_pic.jpg);
+    width: 100%;
+    height: 90vh;
+    border-bottom: 8px solid #ffb23d;
+}
+.bg .container
+{
+    text-align: center;
+}
+.bg .container img{
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+.bg .container h1 {
+    font-size: 38px;
+    color: white;
+    font-weight: 100;
+}
+.bg-btn {
+    background: #ffb23d;
+    color: #fff;
+    border: 1px solid #ffb23d;
+    font-size: 22px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    border-radius: 25px;
+    padding: 12px 55px;
+    margin-top: 50px;
+}
+.bg-btn a {
+    font-size: 23px;
+    font-weight: 800;
+    color: white;
+}
+.content
+{
+    background: #fff;
+    text-align: center;
+    margin-top: 6%;
+}
+.content h2 {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+.content p {
+    padding: 10px 175px;
+    font-weight: 600;
+    line-height: 1.75;
+    margin-bottom: 5%;
+}
+.col-sm-4 {
+    text-align: center;
+    padding: 30px;
+    width: 34%;
+    margin-top: 60px;
+}
+.bg2
+{
+    background: #F4F3F2;
+    height: 76vh;
+    margin-top: 7%;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid orange;
+}
+.col-sm-4 h3 {
+    margin: 21px 0;
+}
+.col-sm-4 p {
+    padding: 0 26px;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+.col-sm-4 img {
+    width: 35%;
+}
+.bg2-btn-green a {
+    padding: 12px 32px;
+    white-space: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.bg2-btn-green
+{
+    background: #52B47D;
+    border: 2px solid #52B47D;
+    height: 45px;
+}
+.bg2-btn-green:hover
+{
+    background: #fff;
+    color:#52B47D ;
+}
+.bg2-btn-green a:hover
+{
+    color:#52B47D ;
+}
+.bg2-btn-blue a {
+    padding: 12px 32px;
+    white-space: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.bg2-btn-blue
+{
+    background: #0098D1;
+    border: 2px solid #0098D1;
+    height: 45px;
+}
+.bg2-btn-blue:hover
+{
+    background: #fff;
+    color:#0098D1 ;
+}
+.bg2-btn-blue a:hover
+{
+    color:#0098D1 ;
+}
+.bg2-btn-orange a {
+    padding: 12px 32px;
+    white-space: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.bg2-btn-orange
+{
+    background: #FEB649;
+    border: 2px solid #FEB649;
+    height: 45px;
+}
+.bg2-btn-orange:hover
+{
+    background: #fff;
+    color:#FEB649 ;
+}
+.bg2-btn-orange a:hover
+{
+    color:#FEB649 ;
+}
+.bg3
+{
+    background-image: url(https://wallpapertag.com/wallpaper/full/e/f/c/412191-download-free-world-map-wallpaper-high-resolution-1920x1080-for-mac.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    text-align: center;
+    border-bottom: 3px solid grey;
+}
+.bg3 .container h1{
+    font-size: 3em;
+    padding: 100px 0;
+}
+.bg3 .container .bg2-btn-blue a
+{
+    font-size: 2em;
+}
+.board-card
+{
+    width: 34%;
+    background: #E5F4FA;
+    text-align-last: center;
+}
+.board
+{
+    padding: 100px;
+    background: ccc;
+    border-bottom: 3px solid grey;
+}
+.board-card h2 {
+    margin: 50px;
+}
+.board-card .bg2-btn-blue  {
+    margin-bottom: 20px;
+}
+.board-card p{
+    padding: 12px;
+}
+.home-news
+{
+    background: #F4F3F2;
+    height: 150vh;
+    text-align: center;
+    border-bottom: 5px solid orange;
+}
+.card
+{
+    background: #fff;
+    width: 28%;
+    border: 1px solid orange;
+
+}
+.card h5{
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+}
+.card h3 a {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+.card h3 a:hover {
+    color: cadetblue;
+}
+.card h3 {
+    margin: 15px 18px;
+    text-align: left;
+}
+.card p{
+    padding: 19px;
+    font-size: 18px;
+    text-align: left;
+}
+.home-news h2 {
+    padding: 52px;
+}
+.home-news .bg2-btn-orange
+{
+    margin: 39px 0;
+}
+footer{
+    background: #484D50;
+    height: 55vh;
+}
+footer .container
+{
+    justify-content: space-between;
+}
+.f-inner
+{
+    width: 20%;
+}
+.f-inner h4 {
+    color: white;
+    margin: 40px 0;
+}
+.f-inner a {
+    color: white;
+    font-size: 17px;
+    padding: 10px 0;
+    line-height: 3;
+}
+.f-inner a:hover
+{
+    border-bottom: 2px solid grey;
+}
+.about-us
+{
+    background: #52B47D;
+}
+.about h1 {
+    padding: 5% 40%;
+    font-size: 34px;
+}
+.about img {
+    width: 100%;
+    margin-bottom: 5%;
+    border: 16px solid #FEB649;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.75;
+}
+.about .bg2-btn-blue {
+    margin: 5% 40%;
+    width: 12%;
+}
+.our-work .container h1 {
+    padding: 5% 40%;
+}
+.our-work .container p {
+    line-height: 1.75;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+.work-content h4 a {
+    color: black;
+    font-size: 23px;
+    border-bottom: 1px solid grey;
+}
+.work-content h4 a:hover {
+    color: red;
+    border-bottom: 3px solid red;
+}
+.work-content h3 {
+    margin: 20px 0px;
+    font-size: 17px;
+}
+.join-card h3 {
+    margin: 7% 0;
+}
+.join-card {
+    padding: 5%;
+    border: 3px solid grey;
+    margin-bottom: 5%;
+}
+.join-card p {
+    margin-bottom: 25px;
+}
+.join-card .bg2-btn-blue {
+    margin-top: 34px;
+}
+.join h1{
+    padding: 5% 43%;
+    font-size: 3em;
+}
+@media only screen and (max-width: 990px)
+{
+    body {
+    width: fit-content;
+    }
+    .navbar-brand {
+        width: 100%;
+    }    
+    nav .navigation
+    {
+        display: none;
+    }
+    .navbar
+    {
+        margin-bottom: 0;
+        padding: 9px 12px;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: auto;
+        background: url(img/menu.png); 
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        display: table;
+        transition: .5s ease-out;
+    }
+    .menuToggle.active
+    {
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: .5s ease-out;
+    }
+    nav
+    {
+        background: black;
+    }
+    nav .navigation.active
+    {
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 108px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(img/login-form.jpg);
+    transition: .5s ease-out;
+    background-size: cover;
+    animation: drew .5s ease-in-out;
+    }
+    @keyframes drew{
+        0%{
+            opacity: 0.3;
+            transform: translateY(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    nav .navigation li
+    {
+        margin-left: 0;
+        margin: 10px;
+    }
+    nav .navigation li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    font-size: 20px;
+    transition: .5s ease-out;
+    }
+    .content p {
+        padding: 7px;
+    }
+    .bg2 .row {
+        display: block;
+    }
+    .bg2 {
+        height: auto;
+    }
+    .col-sm-4 {
+        width: 100%;
+    }
+    .board {
+        display: block;
+    }
+    .board-card {
+        width: 100%;
+    }
+    .home-news .flex
+    {
+        display: block;
+    }
+    .bg .container
+    {
+        padding: 0 16px;
+    }
+    .bg
+    {
+        height: auto;
+        padding-bottom: 25px;
+    }
+    .card {
+        width: 100%;
+        padding: 10%;
+    }
+    .home-news
+    {
+        height: auto;
+    }
+    footer
+    {
+        height: auto;
+        padding-bottom: 25px;
+    }
+    footer .flex
+    {
+        display: block;
+        text-align: center;
+    }
+    .f-inner
+    {
+        width: 100%;
+    }
+    .f-inner h4 {
+        margin: 0px;
+        padding: 21px;
+    }
+    .about h1{
+        padding: 32px;
+        text-align: center;
+    }
+    .about p {
+        font-size: 17px;
+        padding: 10px 22px;
+    }
+    .about .bg2-btn-blue {
+        width: auto;
+    }
+    .bg2-btn-blue a
+    {
+        padding: 0;
+    }
+    .our-work p {
+        padding: 10px 30px;
+    }
+    .work-video {
+        padding: 10px 53px;
+        text-align: center;
+    }
+    .work 
+    {
+        display: block;
+    }
+    .join h1 {
+        text-align: center;
+        padding: 29px 16px;
+    }
+    .join-us
+    {
+        display: block;
+    }
+    .join-card
+    {
+        margin: 13px 17px;
+    }
+}
